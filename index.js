@@ -1,5 +1,5 @@
 var SERVER_NAME = 'patient-api'
-var PORT = 3008;
+var PORT = 3010;
 var HOST = '127.0.0.1';
 
 var restify = require('restify');
@@ -16,7 +16,7 @@ var server = restify.createServer();
 server.use(restify.plugins.bodyParser({ mapParams: false }));
 
 // starting server
-server.listen(3008, function() {
+server.listen(3010, function() {
     //to log the information on start-up about server url
   console.log('%s listening at %s', server.name, server.url);
   console.log('Endpoints:')
